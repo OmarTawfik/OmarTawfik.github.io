@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    // Language Support
+    "tamasfe.even-better-toml",
+    "yzhang.markdown-all-in-one",
+    // Formatting/Linting
+    "DavidAnson.vscode-markdownlint",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "timonwong.shellcheck"
+  ]
+}

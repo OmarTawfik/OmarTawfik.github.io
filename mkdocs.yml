@@ -1,0 +1,59 @@
+site_name: Omar Tawfik
+site_url: https://omartawfik.com/
+
+docs_dir: public/
+site_dir: build/
+
+nav:
+  - index.md
+  - "": 404.md
+  - Blog:
+      - Jan 2019:
+          - blog/2019/01/my-newfound-inner-artist/index.md
+
+plugins:
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+  - search:
+      lang: en
+  - redirects:
+      redirect_maps:
+        Blog/index.md: blog/2019/01/my-newfound-inner-artist/index.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+
+theme:
+  name: material
+  favicon: assets/favicon.svg
+  icon:
+    logo: fontawesome/solid/feather
+  custom_dir: overrides/
+  features:
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.follow
+  font:
+    text: Nunito
+    code: Roboto Mono
+  palette:
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode

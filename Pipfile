@@ -1,0 +1,12 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pipenv = "==2023.2.18"
+mkdocs = "==1.4.2"
+mkdocs-material = "==9.0.15"
+mkdocs-minify-plugin = "==0.6.2"
+mkdocs-redirects = "==1.0.4"
+yamllint = "==1.29.0"

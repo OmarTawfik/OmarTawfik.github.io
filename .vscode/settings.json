@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": true,
+  "editor.rulers": [120],
+  "files.eol": "\n",
+  "search.exclude": {
+    // Keep in sync with all files that contain the string "__REPO_GLOB_EXCLUSION__"
+    "**/.hermit/": true,
+    "**/build/": true,
+    "**/node_modules/": true
+  }
+}

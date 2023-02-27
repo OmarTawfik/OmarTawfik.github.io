@@ -1,0 +1,19 @@
+{% extends "common/hero-page.html" %}
+
+{% block hero %}
+  {{ super() }}
+
+  <section class="mdx-container">
+    <div class="md-grid md-typeset">
+      <div class="hero">
+        <div class="hero-title"><span class="hero-name">404</span></div>
+        <div class="hero-contents">Ooops! Looks like you reached a broken link.</div>
+        <div>
+          <a class="hero-link" href="/">
+            <span class="twemoji"> {% include ".icons/fontawesome/solid/house-chimney.svg" %} </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

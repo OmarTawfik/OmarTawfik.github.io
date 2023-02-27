@@ -1,0 +1,30 @@
+{% extends "common/hero-page.html" %}
+
+{% block hero %}
+  {{ super() }}
+
+  <section class="mdx-container">
+    <div class="md-grid md-typeset">
+      <div class="hero">
+        <div class="hero-title">Hi, I'm <span class="hero-name">Omar Tawfik</span></div>
+        <div class="hero-contents">
+          I'm passionate about beautiful tools that solve real world problems. I enjoy trying out new ideas. I have many
+          years of experience working on compilers, programming languages, web apps, and developer tools, both on open
+          source projects, and enterprise scale services. In my free time you can find me on my bike, being an extrovert,
+          or trying to learn something new!
+        </div>
+        <div>
+          <a class="hero-link" rel="noopener noreferrer" target="_blank" href="https://www.github.com/omartawfik">
+            <span class="twemoji"> {% include ".icons/fontawesome/brands/github.svg" %} </span>
+          </a>
+          <a class="hero-link" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/otawfik">
+            <span class="twemoji"> {% include ".icons/fontawesome/brands/linkedin.svg" %} </span>
+          </a>
+          <a class="hero-link" href="/blog">
+            <span class="twemoji"> {% include ".icons/fontawesome/solid/feather.svg" %} </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

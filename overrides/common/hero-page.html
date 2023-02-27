@@ -1,0 +1,72 @@
+{% extends "main.html" %}
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/hero-page.css' | url }}" />
+{% endblock %}
+
+{% block header %}
+  <!--
+    This is a replica of the original, but:
+    * Made background transparent.
+    * Removed navigation, logo, and search.
+    * Kept only color/theme switcher.
+  -->
+  <header class="{{ class }}" data-md-component="header">
+    <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
+      <!-- Header title -->
+      <div class="md-header__title" data-md-component="header-title">
+        <!-- Deleted, but kept empty to push the rest to the left -->
+      </div>
+      <!-- Color palette -->
+      {% if not config.theme.palette is mapping %}
+        <form class="md-header__option" data-md-component="palette">
+          {% for option in config.theme.palette %}
+            {% set scheme = option.scheme | d("default", true) %}
+            <input
+              id="__palette_{{ loop.index }}"
+              type="radio"
+              name="__palette"
+              class="md-option"
+              data-md-color-media="{{ option.media }}"
+              data-md-color-scheme="{{ scheme | replace(' ', '-') }}"
+              data-md-color-primary="{{ option.primary | replace(' ', '-') }}"
+              data-md-color-accent="{{ option.accent | replace(' ', '-') }}"
+              {% if option.toggle %}
+                aria-label="{{ option.toggle.name }}"
+              {% else  %}
+                aria-hidden="true"
+              {% endif %}
+            />
+            {% if option.toggle %}
+              <label
+                title="{{ option.toggle.name }}"
+                class="md-header__button md-icon"
+                for="__palette_{{ loop.index0 or loop.length }}"
+                hidden
+              >
+                {% include ".icons/" ~ option.toggle.icon ~ ".svg" %}
+              </label>
+            {% endif %}
+          {% endfor %}
+        </form>
+      {% endif %}
+    </nav>
+  </header>
+{% endblock %}
+
+{% block site_nav %}
+  <!-- Hide Navigation -->
+{% endblock %}
+
+{% block tabs %}
+  <!-- Hide Tabs -->
+{% endblock %}
+
+{% block container %}
+  <!-- Hide Page Contents -->
+{% endblock %}
+
+{% block footer %}
+  <!-- Hide Footer -->
+{% endblock %}

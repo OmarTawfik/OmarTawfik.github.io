@@ -1,0 +1,42 @@
+/*
+ * Light Theme:
+ */
+
+[data-md-color-scheme="default"] {
+  --md-default-fg-color: #111111;
+  --md-default-bg-color: #eeeeee;
+
+  --md-code-fg-color: var(--md-default-fg-color);
+  --md-code-bg-color: #cacaca;
+  --md-code-hl-color: #aba8a8;
+}
+
+/*
+ * Dark Theme:
+ */
+
+[data-md-color-scheme="slate"] {
+  --md-default-fg-color: #a4acc4;
+  --md-default-bg-color: #10121b;
+
+  --md-code-fg-color: var(--md-default-fg-color);
+  --md-code-bg-color: #2a2e3e;
+  --md-code-hl-color: #4287ff26;
+}
+
+/*
+ * Both Themes:
+ */
+
+:root > * {
+  --md-primary-fg-color: #0056b1;
+  --md-accent-fg-color: #004895;
+
+  --md-default-fg-color--light: var(--md-default-fg-color);
+  --md-default-fg-color--lighter: var(--md-default-fg-color);
+  --md-default-fg-color--lightest: var(--md-default-fg-color);
+
+  --md-default-bg-color--light: var(--md-default-fg-color);
+  --md-default-bg-color--lighter: var(--md-default-fg-color);
+  --md-default-bg-color--lightest: var(--md-default-fg-color);
+}

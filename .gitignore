@@ -1,0 +1,4 @@
+# Keep in sync with all files that contain the string "__REPO_GLOB_EXCLUSION__"
+.hermit/**
+build/**
+node_modules/**
