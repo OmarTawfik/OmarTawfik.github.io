@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # My Newfound Inner Artist
 
 <!--
