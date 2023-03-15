@@ -36,6 +36,7 @@ theme:
     logo: fontawesome/solid/feather
   custom_dir: overrides/
   features:
+    - navigation.footer
     - navigation.sections
     - navigation.tabs
     - navigation.tracking
@@ -57,3 +58,20 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to dark mode
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/OmarTawfik/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/otawfik/
+  consent:
+    title: Cookie Consent
+    actions: [accept, reject]
+    description: >-
+      I use cookies to recognize repeated visits and preferences, as well as to
+      measure how useful my contents is to readers. Your consent helps me improve it, and prioritize further work.
+      You can change your cookie settings at any time on the footer of this page.
+
+copyright: >
+  Copyrights &copy; 2018 - 2023 Omar Tawfik | <b><a href="#__consent">Change Cookie Settings</a></b>

@@ -2,7 +2,10 @@ rules:
   braces:
     forbid: non-empty
   brackets:
-    forbid: non-empty
+    min-spaces-inside: 0
+    max-spaces-inside: 0
+    min-spaces-inside-empty: 0
+    max-spaces-inside-empty: 0
   comments:
     min-spaces-from-content: 1
     require-starting-space: true
