@@ -22,7 +22,8 @@ plugins:
       lang: en
   - redirects:
       redirect_maps:
-        Blog/index.md: blog/2019/01/my-newfound-inner-artist/index.md
+        # Pointed to from home page template: `overrides/home.html`
+        blog/index.md: blog/2019/01/my-newfound-inner-artist/index.md
 
 markdown_extensions:
   - admonition
